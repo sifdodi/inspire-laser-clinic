@@ -1,7 +1,7 @@
 const state = { lang: localStorage.getItem('inspire-lang') || 'ar' };
 const serviceNames = {
-  ar: { fillers:'الفيلر وتنسيق الملامح', skin:'العناية بالبشرة', booster:'Skin Booster', peeling:'تقشير البشرة', hair:'عناية بفروة الرأس', rhinoplasty:'استشارة تجميل الأنف الجراحي', other:'استشارة عامة' },
-  en: { fillers:'Fillers & facial contouring', skin:'Skin care', booster:'Skin booster', peeling:'Skin peeling', hair:'Scalp care', rhinoplasty:'Surgical rhinoplasty consultation', other:'General consultation' }
+  ar: { laser:'إزالة الشعر بالليزر', fillers:'الفيلر وتنسيق الملامح', skin:'العناية بالبشرة', booster:'Skin Booster', peeling:'تقشير البشرة', hair:'عناية بفروة الرأس', rhinoplasty:'استشارة تجميل الأنف الجراحي', other:'استشارة عامة' },
+  en: { laser:'Laser hair removal', fillers:'Fillers & facial contouring', skin:'Skin care', booster:'Skin booster', peeling:'Skin peeling', hair:'Scalp care', rhinoplasty:'Surgical rhinoplasty consultation', other:'General consultation' }
 };
 
 function applyLanguage(lang){
@@ -76,3 +76,4 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 // Optional TikTok Pixel hook: set window.INSPIRE_TIKTOK_PIXEL_ID before this file once an ID is supplied.
 if (window.INSPIRE_TIKTOK_PIXEL_ID) document.documentElement.dataset.tiktokPixelReady = 'true';
+
