@@ -76,4 +76,3 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 // Optional TikTok Pixel hook: set window.INSPIRE_TIKTOK_PIXEL_ID before this file once an ID is supplied.
 if (window.INSPIRE_TIKTOK_PIXEL_ID) document.documentElement.dataset.tiktokPixelReady = 'true';
-
